@@ -8,7 +8,6 @@ import {
   BLOG_POSTS,
   HERO_SLIDES,
   SCENERY,
-  TEA_COMPARISON,
   fmt,
 } from './data'
 
@@ -196,75 +195,6 @@ function HeroSlideshow({ onExplore }) {
         </div>
       </div>
     </header>
-  )
-}
-
-/* ══════════════════════════════════════════════
-   SECTION SO SÁNH LỤC TRÀ VÀ HỒNG TRÀ
-══════════════════════════════════════════════ */
-function TeaComparisonSection({ onViewProduct }) {
-  return (
-    <section className="section tea-compare-section" id="so-sanh">
-      <div className="section-header">
-        <p className="eyebrow">Hai Dòng Trà Chủ Lực</p>
-        <h2>{TEA_COMPARISON.title}</h2>
-        <p className="section-sub">{TEA_COMPARISON.subtitle}</p>
-      </div>
-
-      <div className="compare-grid">
-        {TEA_COMPARISON.items.map((item) => (
-          <div key={item.id} className="compare-card">
-            <div className="compare-card-head">
-              <span className="compare-tag" style={{ background: item.colorBadge }}>
-                {item.tag}
-              </span>
-              <h3>{item.name}</h3>
-            </div>
-
-            <div className="compare-img-box">
-              <img src={item.image} alt={item.name} />
-            </div>
-
-            <div className="compare-details">
-              <div className="compare-row">
-                <span className="c-label">Sắc nước:</span>
-                <span className="c-val">{item.waterColor}</span>
-              </div>
-              <div className="compare-row">
-                <span className="c-label">Hương vị:</span>
-                <span className="c-val">{item.flavor}</span>
-              </div>
-              <div className="compare-row">
-                <span className="c-label">Mùi hương:</span>
-                <span className="c-val">{item.aroma}</span>
-              </div>
-              <div className="compare-row">
-                <span className="c-label">Chế biến:</span>
-                <span className="c-val">{item.process}</span>
-              </div>
-              <div className="compare-row">
-                <span className="c-label">Thưởng thức:</span>
-                <span className="c-val">{item.bestTime}</span>
-              </div>
-              <div className="compare-row">
-                <span className="c-label">Khuyên dùng:</span>
-                <span className="c-val highlight">{item.target}</span>
-              </div>
-            </div>
-
-            <button
-              className="btn btn-compare-action"
-              onClick={() => {
-                const p = PRODUCTS.find((x) => x.id === item.id)
-                if (p) onViewProduct(p)
-              }}
-            >
-              Xem chi tiết {item.name.split('(')[0]} →
-            </button>
-          </div>
-        ))}
-      </div>
-    </section>
   )
 }
 
@@ -1076,100 +1006,6 @@ function FAQSection() {
 }
 
 /* ══════════════════════════════════════════════
-   PHẦN LIÊN HỆ THIẾT KẾ MỚI (FB, SĐT, ZALO)
-══════════════════════════════════════════════ */
-function ContactSection() {
-  return (
-    <section id="lien-he" className="section contact-showcase-section">
-      <div className="section-header">
-        <p className="eyebrow">Kết nối trực tiếp</p>
-        <h2>Liên Hệ Với Đỉnh Nương Sơn</h2>
-        <p className="section-sub">
-          Chúng tôi hỗ trợ 24/7 qua 3 kênh liên lạc chính thức: Facebook, Số điện thoại và Zalo.
-        </p>
-      </div>
-
-      <div className="contact-channels-grid">
-        {/* Kênh 1: Facebook Fanpage */}
-        <div className="channel-card fb-card">
-          <div className="channel-icon-wrap fb-icon">
-            <span>f</span>
-          </div>
-          <span className="channel-badge">Fanpage chính thức</span>
-          <h3>Facebook Messenger</h3>
-          <p className="channel-desc">
-            Theo dõi những thước phim hái chè tại Bản Bẹ, cập nhật mẻ trà mới và nhắn tin tư vấn trực tiếp.
-          </p>
-          <div className="channel-info-val">{SHOP.facebookName}</div>
-          <a
-            href={SHOP.facebook}
-            target="_blank"
-            rel="noreferrer"
-            className="btn channel-btn fb-btn"
-          >
-            Nhắn tin qua Facebook →
-          </a>
-        </div>
-
-        {/* Kênh 2: Số điện thoại / Hotline */}
-        <div className="channel-card phone-card">
-          <div className="channel-icon-wrap phone-icon">
-            <span>📞</span>
-          </div>
-          <span className="channel-badge hotline-badge">Hotline trực 24/7</span>
-          <h3>Số Điện Thoại Trực Tiếp</h3>
-          <p className="channel-desc">
-            Gọi ngay để được tư vấn hương vị trà, đặt hàng số lượng lớn, hỗ trợ đơn hàng nhanh nhất.
-          </p>
-          <div className="channel-info-val phone-highlight">{SHOP.hotlineDisplay}</div>
-          <a href={`tel:${SHOP.phone}`} className="btn channel-btn phone-btn">
-            Bấm gọi ngay: {SHOP.hotlineDisplay}
-          </a>
-        </div>
-
-        {/* Kênh 3: Zalo Official */}
-        <div className="channel-card zalo-card">
-          <div className="channel-icon-wrap zalo-icon">
-            <span>Zalo</span>
-          </div>
-          <span className="channel-badge zalo-badge">Phản hồi trong 2 phút</span>
-          <h3>Zalo Tư Vấn & Đặt Hàng</h3>
-          <p className="channel-desc">
-            Xem ảnh thật búp chè, nhận hướng dẫn pha trà và trao đổi trực tiếp với nghệ nhân bản địa.
-          </p>
-          <div className="channel-info-val">{SHOP.hotlineDisplay}</div>
-          <a
-            href={`https://zalo.me/${SHOP.zalo}`}
-            target="_blank"
-            rel="noreferrer"
-            className="btn channel-btn zalo-btn"
-          >
-            Chat Zalo ngay →
-          </a>
-        </div>
-      </div>
-
-      {/* Địa chỉ xưởng chế biến tại Tà Xùa */}
-      <div className="workshop-banner">
-        <div className="workshop-content">
-          <span className="workshop-tag">Nương chè & Xưởng sao</span>
-          <h3>Ghé Thăm Bản Bẹ, Xã Tà Xùa, Bắc Yên, Sơn La</h3>
-          <p>
-            Đỉnh Nương Sơn luôn rộng cửa đón tiếp quý trà hữu ghé thăm quần thể Cây Di sản chè Shan
-            Tuyết cổ thụ hơn 200 năm tuổi, cùng thưởng trà và ngắm biển mây ngút ngàn.
-          </p>
-        </div>
-        <div className="workshop-action">
-          <a href={`tel:${SHOP.phone}`} className="btn btn-primary-lg">
-            Gọi chỉ đường: {SHOP.hotlineDisplay}
-          </a>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-/* ══════════════════════════════════════════════
    FULL-PAGE CONTACT VIEW
 ══════════════════════════════════════════════ */
 function FullPageContactView({ onBackToHome }) {
@@ -1384,6 +1220,132 @@ function ReviewsSection() {
             )}
           </div>
         ))}
+      </div>
+    </section>
+  )
+}
+
+/* ══════════════════════════════════════════════
+   HERITAGE STORY SECTION (CÂU CHUYỆN DI SẢN CHUYÊN NGHIỆP)
+══════════════════════════════════════════════ */
+function HeritageStorySection() {
+  return (
+    <section id="cau-chuyen" className="section heritage-story-section">
+      <div className="section-header">
+        <p className="eyebrow">Di sản đại ngàn Tây Bắc</p>
+        <h2>Hành Trình Di Sản Nơi Thiên Đường Mây Tà Xùa</h2>
+        <p className="section-sub">
+          Bản Bẹ – Chiếc nôi nuôi dưỡng quần thể Cây Di sản chè Shan Tuyết cổ thụ 100 - 300 năm tuổi
+          trên đỉnh núi cao 1.800m, được các cơ quan báo chí quốc gia và Hội Cây Di sản Việt Nam ghi nhận.
+        </p>
+      </div>
+
+      {/* Press Quote Highlight */}
+      <div className="heritage-press-quote">
+        <div className="press-quote-badge">📰 Trích dẫn từ phóng sự Báo Nhân Dân</div>
+        <blockquote>
+          “Bản Bẹ, thung lũng ẩn mình giữa chốn 'thiên đường mây' Tà Xùa cao vợi với những rừng chè
+          Shan tuyết cổ thụ... Những 'cụ' chè hơn 200 năm tuổi bám rễ sâu vào vách đá núi, ngậm sương
+          tuyết bốn mùa để dâng cho đời chén trà ngọt hậu sâu thẳm.”
+        </blockquote>
+        <div className="press-quote-author">
+          <span>— Phóng sự “Đánh thức vàng xanh nơi thiên đường mây” · Báo Nhân Dân</span>
+          <a
+            href="https://nhandan.vn/danh-thuc-vang-xanh-noi-thien-duong-may-post795922.html"
+            target="_blank"
+            rel="noreferrer"
+            className="press-link-chip"
+          >
+            Đọc bài gốc trên Báo Nhân Dân ↗
+          </a>
+        </div>
+      </div>
+
+      {/* 3 Pillars Grid */}
+      <div className="heritage-pillars-grid">
+        <div className="pillar-card">
+          <div className="pillar-num">01</div>
+          <span className="pillar-tag">Vinh danh quốc gia</span>
+          <h3>Quần Thể Cây Di Sản Việt Nam</h3>
+          <p>
+            Theo Quyết định số 487/QĐ-HĐTĐ của Hội đồng Cây Di sản Việt Nam (VACNE), 200 cây chè Shan
+            tuyết cổ thụ từ 100 đến gần 300 năm tuổi tại Bản Bẹ đã được công nhận là Cây Di sản Việt
+            Nam, biểu tượng sinh thái vô giá của vùng cao Bắc Yên, Sơn La.
+          </p>
+          <a
+            href="http://vacne.org.vn/200-cay-che-shan-tuyet-co-thu-o-ban-be-son-la-du-tieu-chuan-cay-di-san-viet-nam/218086.html"
+            target="_blank"
+            rel="noreferrer"
+            className="pillar-link"
+          >
+            Xem quyết định vinh danh (VACNE) →
+          </a>
+        </div>
+
+        <div className="pillar-card">
+          <div className="pillar-num">02</div>
+          <span className="pillar-tag">Thổ nhưỡng 1.800m</span>
+          <h3>Thiên Nhiên Thuần Khiết Đỉnh Mây</h3>
+          <p>
+            Ở độ cao 1.800m quanh năm sương tuyết và chìm trong biển mây, biên độ nhiệt ngày đêm lớn
+            tạo điều kiện cho búp trà tích tụ lượng polyphenol và EGCG tự nhiên vượt trội. Từng búp
+            chè phủ lớp lông tơ trắng mịn màng như tuyết.
+          </p>
+          <a
+            href="https://www.vietnamplus.vn/son-la-nang-tam-thuong-hieu-che-shan-tuyet-ta-xua-post823528.vnp"
+            target="_blank"
+            rel="noreferrer"
+            className="pillar-link"
+          >
+            Ghi nhận của VietnamPlus (TTXVN) →
+          </a>
+        </div>
+
+        <div className="pillar-card">
+          <div className="pillar-num">03</div>
+          <span className="pillar-tag">Nghệ nhân bản địa</span>
+          <h3>Sao Chảo Gang Củi Truyền Thống</h3>
+          <p>
+            Không dùng hương liệu, không chất bảo quản. Từng búp chè sau khi trèo cây hái thủ công vào
+            sáng sớm được nghệ nhân người H'Mông sao tay ngay trên chảo gang củi đỏ lửa, đánh thức
+            hương thơm cốm non và lưu giữ vị ngọt hậu sâu bền bỉ.
+          </p>
+          <div className="pillar-badge-bot">
+            <span>🌿 100% Thuần Tự Nhiên</span>
+            <span>🪵 Chảo Gang Bếp Củi</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Verified Press Citations Bar */}
+      <div className="heritage-press-bar">
+        <span className="press-bar-title">Nguồn báo chí & Hồ sơ Di sản chính thức:</span>
+        <div className="press-pills-list">
+          <a
+            href="https://nhandan.vn/danh-thuc-vang-xanh-noi-thien-duong-may-post795922.html"
+            target="_blank"
+            rel="noreferrer"
+            className="press-pill"
+          >
+            <span className="p-dot" /> Báo Nhân Dân: Đánh thức "vàng xanh" Tà Xùa ↗
+          </a>
+          <a
+            href="https://www.vietnamplus.vn/son-la-nang-tam-thuong-hieu-che-shan-tuyet-ta-xua-post823528.vnp"
+            target="_blank"
+            rel="noreferrer"
+            className="press-pill"
+          >
+            <span className="p-dot" /> VietnamPlus (TTXVN): Nâng tầm thương hiệu chè Tà Xùa ↗
+          </a>
+          <a
+            href="http://vacne.org.vn/200-cay-che-shan-tuyet-co-thu-o-ban-be-son-la-du-tieu-chuan-cay-di-san-viet-nam/218086.html"
+            target="_blank"
+            rel="noreferrer"
+            className="press-pill"
+          >
+            <span className="p-dot" /> Hội Cây Di sản VN: Bằng công nhận 200 cây cổ thụ Bản Bẹ ↗
+          </a>
+        </div>
       </div>
     </section>
   )
@@ -1640,6 +1602,14 @@ export default function App() {
             Tà Xùa
           </a>
           <a
+            href="#cau-chuyen"
+            onClick={() => {
+              if (viewState !== 'home') handleBackToHome()
+            }}
+          >
+            Câu chuyện di sản
+          </a>
+          <a
             href="#van-hoa-tra"
             onClick={() => {
               if (viewState !== 'home') handleBackToHome()
@@ -1662,15 +1632,6 @@ export default function App() {
             }}
           >
             Hỏi đáp
-          </a>
-          <a
-            href="#lien-he"
-            onClick={(e) => {
-              e.preventDefault()
-              handleOpenContact()
-            }}
-          >
-            Liên hệ
           </a>
         </div>
 
@@ -1709,7 +1670,7 @@ export default function App() {
         <>
           <HeroSlideshow
             onExplore={() => {
-              const el = document.getElementById('so-sanh')
+              const el = document.getElementById('san-pham')
               if (el) el.scrollIntoView({ behavior: 'smooth' })
             }}
           />
@@ -1719,7 +1680,7 @@ export default function App() {
               ['🌱', 'Cổ thụ Tà Xùa 200+ năm'],
               ['📦', 'Giao hàng Ship COD toàn quốc'],
               ['💳', 'Thanh toán chuyển khoản VietQR'],
-              ['💬', 'Tư vấn Facebook, SĐT & Zalo'],
+              ['💬', 'Tư vấn tận tâm qua Zalo'],
             ].map(([i, t]) => (
               <div key={t}>
                 <span>{i}</span>
@@ -1727,9 +1688,6 @@ export default function App() {
               </div>
             ))}
           </section>
-
-          {/* Section So Sánh Lục Trà & Hồng Trà (Chủ Lực) */}
-          <TeaComparisonSection onViewProduct={handleViewProduct} />
 
           <ScenerySection />
 
@@ -1757,29 +1715,8 @@ export default function App() {
               </div>
             </section>
 
-            {/* Story Section */}
-            <section id="cau-chuyen" className="story">
-              <div className="story-img" />
-              <div className="story-text">
-                <p className="eyebrow">Câu chuyện di sản</p>
-                <h2>Từ đỉnh mây Tà Xùa đến chén trà của bạn</h2>
-                <p>
-                  Những cây chè Shan Tuyết mọc hoang tự nhiên ở độ cao trên 1.500m thuộc xã Tà Xùa,
-                  huyện Bắc Yên, tỉnh Sơn La — quanh năm sương mù bao phủ. Búp chè phủ lớp lông tơ
-                  trắng như tuyết, mang vị ngọt hậu rất riêng mà chè công nghiệp không thể có được.
-                </p>
-                <p>
-                  Mỗi mẻ trà <strong>{SHOP.name}</strong> đều được người dân H'Mông bản địa hái tay
-                  vào sáng sớm và sao thủ công trên chảo gang — không hương liệu, không chất bảo quản.
-                  Nhiều cây chè tại đây đã được công nhận là <strong>Cây Di sản Việt Nam</strong>.
-                </p>
-                <div className="story-badges">
-                  <span>🏆 Cây Di sản Việt Nam</span>
-                  <span>🌿 100% Thuần Tự Nhiên</span>
-                  <span>📍 Bản Bẹ · Tà Xùa · 1.800m</span>
-                </div>
-              </div>
-            </section>
+            {/* Câu chuyện di sản: Code lại chuyên nghiệp & trích dẫn báo chí xác thực 100% */}
+            <HeritageStorySection />
 
             {/* Văn hóa trà & Cẩm nang Tà Xùa */}
             <BlogSection onSelectPost={setSelectedBlog} />
@@ -1789,9 +1726,6 @@ export default function App() {
 
             {/* FAQ Section - THIẾT KẾ CHUYÊN NGHIỆP */}
             <FAQSection />
-
-            {/* Section Kết Nối Trực Tiếp (Được đưa xuống cuối cùng trước Footer) */}
-            <ContactSection />
           </main>
         </>
       )}
@@ -1803,8 +1737,8 @@ export default function App() {
           <h2>Chè Shan Tuyết {SHOP.name}</h2>
           <p>
             Chuyên sâu bộ đôi Lục Trà và Hồng Trà Shan Tuyết cổ thụ 100% tự nhiên từ độ cao 1.800m
-            Tà Xùa, Bắc Yên, Sơn La. Hỗ trợ Ship COD đồng kiểm toàn quốc, thanh toán chuyển khoản và đặt
-            hàng qua Facebook, SĐT, Zalo.
+            Bản Bẹ, Tà Xùa, Bắc Yên, Sơn La. Hỗ trợ Ship COD đồng kiểm toàn quốc, thanh toán chuyển khoản và đặt
+            hàng tiện lợi qua Zalo.
           </p>
         </div>
 
@@ -1836,12 +1770,12 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#so-sanh"
+                  href="#cau-chuyen"
                   onClick={() => {
                     handleBackToHome()
                   }}
                 >
-                  Bảng so sánh hương vị Lục & Hồng Trà
+                  Hành trình Cây Di sản Tà Xùa
                 </a>
               </li>
             </ul>

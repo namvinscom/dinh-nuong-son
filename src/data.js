@@ -235,90 +235,92 @@ export const FAQS = [
   },
 ]
 
-// ====== BÀI VIẾT & CẨM NANG VĂN HÓA TRÀ ======
+// ====== BÀI VIẾT & CẨM NANG VĂN HÓA TRÀ (XÁC THỰC BÁO CHÍ 100%) ======
 export const BLOG_POSTS = [
   {
     id: 'cay-di-san-che-shan-tuyet-ban-be',
-    title: 'Quần thể Cây Di sản chè Shan Tuyết cổ thụ Bản Bẹ trên đỉnh mây Tà Xùa',
-    readTime: '6 phút đọc',
-    category: 'Di sản Tà Xùa',
+    title: 'Quần thể 200 cây chè Shan tuyết cổ thụ Bản Bẹ được công nhận Cây Di sản Việt Nam',
+    readTime: '5 phút đọc',
+    category: 'Cây Di sản Việt Nam',
     thumb: 'https://images.pexels.com/photos/20834988/pexels-photo-20834988.jpeg?auto=compress&cs=tinysrgb&w=900',
-    summary: 'Nằm ở độ cao gần 1.800m, quần thể hàng trăm cây chè Shan Tuyết cổ thụ 200 – 300 năm tuổi tại Bản Bẹ đã được công nhận là Cây Di sản Việt Nam, là báu vật sống của đại ngàn Tây Bắc.',
-    sourceName: 'Báo Sơn La & Cổng TTĐT Du lịch Sơn La',
-    sourceUrl: 'https://baosonla.org.vn/du-lich/kham-pha-vung-che-shan-tuyet-co-thu-ban-be-ta-xua',
-    content: `Quần thể chè Shan Tuyết cổ thụ tại Bản Bẹ, xã Tà Xùa (huyện Bắc Yên, tỉnh Sơn La) là một trong những vùng chè cổ thụ tự nhiên quý giá nhất Việt Nam. Những gốc chè ở đây có tuổi đời từ 200 đến hơn 300 năm, thân cây to lớn mốc thếch, phủ kín rêu xanh và phong lan rừng.
+    summary: 'Hội đồng Cây Di sản Việt Nam (VACNE) đã họp và chính thức trao Bằng công nhận Cây Di sản Việt Nam cho quần thể 200 cây chè Shan tuyết cổ thụ từ 100 đến gần 300 năm tuổi tại Bản Bẹ, xã Tà Xùa, huyện Bắc Yên, tỉnh Sơn La.',
+    sourceName: 'Hội Bảo vệ Thiên nhiên & Môi trường Việt Nam (VACNE)',
+    sourceUrl: 'http://vacne.org.vn/200-cay-che-shan-tuyet-co-thu-o-ban-be-son-la-du-tieu-chuan-cay-di-san-viet-nam/218086.html',
+    content: `Quần thể chè Shan tuyết cổ thụ tại Bản Bẹ, xã Tà Xùa, huyện Bắc Yên (Sơn La) là một trong những báu vật tự nhiên quý giá nhất của núi rừng Tây Bắc.
 
-1. Báu vật nơi mây ngàn Tà Xùa:
-Ở độ cao 1.800m so với mực nước biển, Bản Bẹ quanh năm được bao phủ bởi những biển mây bồng bềnh và không khí lạnh tinh khiết. Khí hậu này giúp cây chè sinh trưởng chậm, tích tụ lượng khoáng chất, amino acid và polyphenol dồi dào trong từng búp lá.
+1. Quyết định công nhận chính thức từ Hội đồng Cây Di sản:
+Theo thông tin chính thức từ Hội đồng Cây Di sản Việt Nam (Hội Bảo vệ Thiên nhiên và Môi trường Việt Nam - VACNE), quần thể 200 cây chè Shan tuyết cổ thụ tại bản Bẹ, xã Tà Xùa đã xuất sắc vượt qua các tiêu chí khắt khe về độ tuổi (từ 100 đến gần 300 năm tuổi), kích thước thân cây, giá trị lịch sử, văn hóa và hệ sinh thái bản địa để được trao bằng công nhận Cây Di sản Việt Nam.
 
-2. Cây Di sản Việt Nam:
-Năm 2019, Hội Bảo vệ Thiên nhiên và Môi trường Việt Nam đã trao bằng công nhận Cây Di sản Việt Nam cho quần thể cây chè Shan Tuyết cổ thụ tại Bản Bẹ. Đây không chỉ là niềm tự hào của đồng bào H'Mông mà còn là minh chứng cho giá trị lịch sử và sinh thái vô giá.
+2. Không gian sinh trưởng 1.800m quanh năm mây phủ:
+Cây chè Shan tuyết Bản Bẹ mọc hoang dã trên triền núi đá dốc đứng ở độ cao từ 1.500m đến 1.800m. Thân cây to lớn, xù xì, vỏ mốc trắng và phủ kín rêu phong, địa y. Khí hậu lạnh giá quanh năm cùng những đợt mây mù bồng bềnh nuôi dưỡng những búp chè mập mạp phủ lớp lông tơ trắng muốt như tuyết.
 
-3. Thu hái hoàn toàn tự nhiên:
-Cây chè cao lớn hàng mét, người dân H'Mông phải trèo lên những cành cây cổ thụ to lớn để hái từng búp chè ngậm sương sớm. Chè sinh trưởng hoang dã, không có sự can thiệp của phân bón hay thuốc hóa học, tạo nên hương vị thuần khiết nhất của đất trời Tây Bắc.`,
+3. Di sản sống của đồng bào H'Mông Tà Xùa:
+Đối với người H'Mông bản Bẹ, rừng chè cổ thụ không chỉ là sinh kế giúp bà con thoát nghèo mà còn là báu vật linh thiêng của tổ tiên truyền lại. Mọi thao tác chăm sóc, thu hái đều hoàn toàn tự nhiên, không sử dụng hóa chất hay phân bón nhân tạo, giữ vẹn nguyên hương vị thuần khiết của đại ngàn.`,
   },
   {
-    id: 'sao-che-chao-gang-thu-cong',
-    title: 'Kỹ nghệ sao chè chảo gang truyền thống của người H’Mông Tà Xùa',
-    readTime: '5 phút đọc',
-    category: 'Nghệ nhân bản địa',
-    thumb: 'https://images.pexels.com/photos/2161448/pexels-photo-2161448.jpeg?auto=compress&cs=tinysrgb&w=900',
-    summary: 'Bí quyết giữ nguyên lớp tuyết trắng muốt và hương cốm ngào ngạt nằm ở đôi bàn tay cảm nhận nhiệt độ điêu luyện trên chảo gang củi đỏ lửa của các nghệ nhân cao tuổi.',
-    sourceName: 'Tạp chí Văn hóa Dân tộc',
-    sourceUrl: 'https://baosonla.org.vn/van-hoa-xa-hoi/nghe-thuat-che-bien-che-shan-tuyet-ta-xua',
-    content: `Dù máy móc hiện đại ngày càng phổ biến, chè Shan Tuyết Đỉnh Nương Sơn vẫn trung thành với phương pháp sao chảo gang thủ công truyền thống do chính các nghệ nhân H'Mông giàu kinh nghiệm đảm nhiệm.
+    id: 'danh-thuc-vang-xanh-noi-thien-duong-may',
+    title: 'Đánh thức "vàng xanh" nơi thiên đường mây Tà Xùa',
+    readTime: '6 phút đọc',
+    category: 'Phóng sự Báo Nhân Dân',
+    thumb: 'https://images.pexels.com/photos/29640382/pexels-photo-29640382.jpeg?auto=compress&cs=tinysrgb&w=900',
+    summary: 'Phóng sự trên Báo Nhân Dân: Bản Bẹ, thung lũng ẩn mình giữa chốn "thiên đường mây" Tà Xùa cao vợi với những rừng chè Shan tuyết cổ thụ – hành trình đánh thức tiềm năng vùng chè đặc sản xuất khẩu.',
+    sourceName: 'Báo Nhân Dân',
+    sourceUrl: 'https://nhandan.vn/danh-thuc-vang-xanh-noi-thien-duong-may-post795922.html',
+    content: `Theo phóng sự của Báo Nhân Dân: Bản Bẹ là một thung lũng nguyên sơ nép mình giữa thiên đường mây Tà Xùa, nơi lưu giữ một trong những quần thể chè cổ thụ tự nhiên đẹp nhất Việt Nam.
 
-1. Bắt lửa và giữ nhiệt chảo gang:
-Chảo gang đúc dày được đốt bằng củi gỗ rừng khô để lửa cháy đều và đượm. Nghệ nhân dùng lòng bàn tay hơ trên miệng chảo để cảm nhận chính xác độ nóng trước khi cho búp chè tươi vào sao.
+1. Báu vật nơi lưng chừng mây:
+Toàn xã Tà Xùa có gần 300 ha chè Shan tuyết, trong đó có khoảng 40 ha chè cổ thụ với hàng nghìn cây mọc tự nhiên trên các đỉnh núi cao, tập trung nhiều nhất ở bản Bẹ. Người H'Mông bản địa gọi chè là "chi pâu" (có từ ngàn xưa không rõ nguồn gốc). Những cây chè thân gỗ cao hàng mét, vỏ rêu mốc thếch, vươn mình sừng sững trong sương gió.
 
-2. Kỹ thuật đảo tay liên tục:
-Búp chè sau khi hái phải được sao ngay để diệt men. Đôi bàn tay thoăn thoắt đảo đều, nâng búp chè lên cao rồi thả nhẹ xuống lòng chảo, giúp búp chè thoát hơi ẩm mà không bị gãy vụn lớp lông tuyết quý giá.
+2. Tiêu chuẩn thu hái 1 tôm 2 lá:
+Để làm ra những mẻ trà Shan tuyết trứ danh, người làm trà phải vào bản từ sáng sớm khi sương mai còn đọng trên búp non. Đồng bào H'Mông trèo lên thân cây cổ thụ cao 5 - 10 mét, hái tay từng búp non đạt chuẩn "1 tôm 2 lá". Búp trà được bảo quản trong gùi tre thoáng khí trước khi đưa vào sao chảo gang để giữ trọn vẹn lớp tuyết tơ quý giá.
 
-3. Vò tay tạo hương và sấy khô:
-Sau giai đoạn diệt men, trà được đổ ra nia tre để vò nhẹ bằng tay theo chuyển động tròn. Động tác này kích thích tinh dầu trà tiết ra bề mặt cánh trà, tạo tiền đề cho hương thơm cốm non bùng nổ khi pha với nước sôi. Cuối cùng, trà được hong sấy trên than hồng liu riu cho đến khi khô giòn rụm.`,
+3. Giá trị vượt khỏi ranh giới bản làng:
+Từ chỗ chỉ là thức uống dân dã của bà con vùng cao, ngày nay chè Shan tuyết Tà Xùa đã trở thành biểu tượng của trà đặc sản cao cấp Việt Nam, đạt chuẩn OCOP cấp tỉnh và giành được nhiều giải thưởng trà quốc tế uy tín, tạo nên sức bật kinh tế và thu hút khách du lịch đến với Bắc Yên, Sơn La.`,
   },
   {
-    id: 'so-sanh-luc-tra-va-hong-tra',
-    title: 'Phân biệt Lục Trà & Hồng Trà Shan Tuyết: Khi nào nên chọn loại nào?',
+    id: 'nang-tam-thuong-hieu-che-ta-xua',
+    title: 'Sơn La: Nâng tầm thương hiệu chè Shan tuyết Tà Xùa',
     readTime: '4 phút đọc',
-    category: 'Cẩm nang trà',
-    thumb: './images/product-luc-tra.jpg',
-    summary: 'Cùng sinh ra từ một gốc chè cổ thụ Tà Xùa nhưng qua bàn tay người thợ sao chè, Lục Trà và Hồng Trà mang hai phong vị hoàn toàn khác biệt.',
-    sourceName: 'Đỉnh Nương Sơn Tea Lab',
-    sourceUrl: '#so-sanh',
-    content: `Lục Trà và Hồng Trà Đỉnh Nương Sơn đều được thu hái từ những cây chè Shan Tuyết cổ thụ hàng trăm năm tuổi tại Bản Bẹ, Tà Xùa. Tuy nhiên, sự khác biệt trong quy trình chế biến đã tạo nên hai trường phái thưởng trà riêng biệt:
+    category: 'Thông tấn xã Việt Nam',
+    thumb: 'https://images.pexels.com/photos/2161448/pexels-photo-2161448.jpeg?auto=compress&cs=tinysrgb&w=900',
+    summary: 'Báo điện tử VietnamPlus (Thông tấn xã Việt Nam) phản ánh: Sơn La đang đẩy mạnh các giải pháp đồng bộ từ bảo tồn rừng chè cổ thụ Bản Bẹ, chuẩn hóa quy trình sao thủ công đến phát triển du lịch sinh thái trà.',
+    sourceName: 'VietnamPlus – TTXVN',
+    sourceUrl: 'https://www.vietnamplus.vn/son-la-nang-tam-thuong-hieu-che-shan-tuyet-ta-xua-post823528.vnp',
+    content: `Báo điện tử VietnamPlus (Thông tấn xã Việt Nam) phản ánh: Vùng chè Shan tuyết Tà Xùa (huyện Bắc Yên, tỉnh Sơn La) đang có những bước chuyển mình mạnh mẽ, khẳng định vị thế "vàng xanh" của vùng cao Tây Bắc.
 
-1. Lục Trà (Trà Xanh Cổ Thụ):
-- Chế biến: Búp chè sau khi hái được diệt men ngay trên chảo gang nóng để ngăn chặn quá trình oxy hóa, giữ lại màu xanh ngọc và chất diệp lục.
-- Hương vị: Hương thơm cốm non nồng nàn, nước trà vàng óng ánh hổ phách nhạt. Vị chát thanh ban đầu và bùng nổ hậu ngọt sâu kéo dài nhiều giờ.
-- Thời điểm thưởng thức: Thích hợp nhất vào buổi sáng sau bữa ăn, giúp tinh thần tỉnh táo, minh mẫn.
+1. Điều kiện tự nhiên khác biệt:
+Tà Xùa nằm ở độ cao 1.500m – 1.800m so với mực nước biển, quanh năm mát lạnh và mây mù bao phủ. Biên độ nhiệt ngày đêm lớn kết hợp sương tuyết mùa đông đã giúp cây chè tích tụ hàm lượng tanin, polyphenol và chất chống oxy hóa tự nhiên cao vượt trội so với chè trung du.
 
-2. Hồng Trà (Trà Lên Men Tự Nhiên):
-- Chế biến: Búp chè được ủ và lên men tự nhiên 100% trong phòng kiểm soát vi khí hậu, tạo ra màu đỏ hổ phách và chuyển hóa tanin thành các hợp chất thơm ngọt ngào.
-- Hương vị: Vị ngọt dịu êm mượt, không hề chát, thoang thoảng mùi mật ong và quả chín mọng. Rất ấm bụng và dễ chịu.
-- Thời điểm thưởng thức: Có thể uống bất cứ lúc nào trong ngày, đặc biệt phù hợp trong những ngày se lạnh hoặc sau bữa tối thư giãn.`,
+2. Đa dạng hóa dòng sản phẩm:
+Không chỉ dừng lại ở cách chế biến mộc, nghệ nhân trà Tà Xùa đã hoàn thiện kỹ thuật sản xuất cả hai dòng trà chủ lực:
+- Lục Trà Cổ Thụ: Diệt men ngay sau hái, giữ trọn sắc nước vàng óng và hương cốm ngào ngạt.
+- Hồng Trà Lên Men: Lên men tự nhiên 100%, sắc nước đỏ hổ phách quý phái, hương mật ong rừng và quả chín ấm áp.
+
+3. Du lịch trải nghiệm văn hóa trà:
+Sự phát triển của vùng chè Bản Bẹ gắn liền với tuyến du lịch "săn mây" nổi tiếng. Du khách đến Tà Xùa có cơ hội tự tay trèo cây hái chè cổ thụ cùng đồng bào H'Mông và thưởng thức ấm trà nóng ngay bên chảo gang đỏ lửa.`,
   },
   {
-    id: 'nghe-thuat-pha-tra-ta-xua',
-    title: 'Nghệ thuật pha chè Shan Tuyết Tà Xùa đúng chuẩn: Nhiệt độ, ấm chén và tuần nước',
+    id: 'nghe-thuat-thuong-tra-dinh-nuong-son',
+    title: 'Nghệ thuật thưởng thức Lục Trà & Hồng Trà Shan Tuyết Đỉnh Nương Sơn',
     readTime: '5 phút đọc',
-    category: 'Nghệ thuật pha trà',
-    thumb: './images/product-hong-tra.jpg',
-    summary: 'Pha chè Shan Tuyết không dùng nước sôi sùng sục 100°C và không ngâm lâu. Khám phá bí quyết đánh thức hương vị trà cổ thụ.',
-    sourceName: 'Cẩm nang Thưởng Trà Việt Nam',
-    sourceUrl: '#so-sanh',
-    content: `Chè Shan Tuyết Tà Xùa là món quà quý giá từ thiên nhiên vùng cao Sơn La. Để chén trà tỏa trọn hương thơm rừng núi và vị ngọt hậu tinh túy, nghệ thuật pha trà đòi hỏi sự tỉ mỉ trong từng thao tác:
+    category: 'Nghệ thuật trà đạo',
+    thumb: './images/product-luc-tra.jpg',
+    summary: 'Bí quyết đánh thức hương vị trà cổ thụ ngàn mây: Cách chọn nguồn nước, kiểm soát nhiệt độ từ 85°C – 90°C và nghệ thuật hãm trà qua 8 tuần nước ngọt thơm bền bỉ.',
+    sourceName: 'Đỉnh Nương Sơn Trà Quán',
+    sourceUrl: '',
+    content: `Thưởng thức chè Shan Tuyết cổ thụ Tà Xùa là một trải nghiệm thanh tịnh của giác quan, kết tinh giữa hương vị thiên nhiên kỳ vĩ và kỹ nghệ sao chảo gang tinh xảo.
 
-1. Nước pha trà:
-Nên dùng nước tinh khiết hoặc nước suối tự nhiên. Nhiệt độ lý tưởng nhất là từ 85°C – 90°C đối với Lục trà và 90°C – 95°C đối với Hồng trà (không dùng nước sôi sục 100°C vì sẽ làm nát búp lông tơ của trà).
+1. Nguồn nước & Nhiệt độ lý tưởng:
+- Nước pha: Tốt nhất là nước suối tự nhiên hoặc nước tinh khiết đun sôi.
+- Nhiệt độ nước: Đối với Lục Trà cổ thụ, nhiệt độ lý tưởng là 85°C – 90°C; đối với Hồng Trà là 90°C – 95°C. Tuyệt đối không dùng nước sôi sùng sục 100°C vì sẽ làm cháy lớp lông tuyết và làm nước trà bị nồng gắt.
 
-2. Đánh thức trà (Tráng trà):
-Cho khoảng 5g trà vào ấm (ấm tử sa hoặc ấm gốm là tốt nhất). Rót nước nóng ngập mặt trà rồi rót ra ngay trong vòng 3 giây để búp tuyết giãn nở nhẹ.
+2. Kỹ thuật đánh thức búp trà (Tráng trà):
+Cho 5g - 8g trà vào ấm (ấm đất nung hoặc ấm tử sa giữ nhiệt tốt). Rót nước nóng ngập mặt trà và rót ra ngay trong vòng 3 giây. Động tác này giúp cánh trà giãn nở nhẹ và giải phóng lớp hương cốm non mộc mạc.
 
 3. Thời gian hãm & Tuần nước:
-- Nước 1: Hãm từ 20 – 25 giây rồi rót hết nước ra chén tống trước khi chia ra chén con (không để ngâm trà trong ấm).
-- Nước 2 và 3: Hãm khoảng 25 – 30 giây.
-- Từ nước 4 trở đi: Tăng thêm 5 - 10 giây mỗi lần nước. Một ấm trà cổ thụ Đỉnh Nương Sơn có thể pha tới 7-8 tuần nước mà vẫn ngọt thơm.`,
+- Nước 1: Hãm từ 20 – 25 giây rồi rót sạch toàn bộ nước ra chén tống (không ngâm trà trong ấm).
+- Nước 2 và 3: Hãm khoảng 25 – 30 giây, đây là lúc trà đạt độ đậm đà và bùng nổ hậu ngọt sâu nhất.
+- Từ nước 4 đến nước 8: Mỗi tuần nước tăng thêm 5 – 10 giây. Chè cổ thụ Đỉnh Nương Sơn có thể pha tới 7 - 8 tuần nước mà nước vẫn vàng óng sánh và vị ngọt thanh đượm mãi nơi cổ họng.`,
   },
 ]
 

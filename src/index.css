@@ -472,116 +472,228 @@ h2 {
 }
 
 /* ══════════════════════════════════════════════
-   SECTION SO SÁNH LỤC TRÀ VÀ HỒNG TRÀ (CHỦ LỰC)
+   HERITAGE STORY SECTION (CÂU CHUYỆN DI SẢN CHUYÊN NGHIỆP)
 ══════════════════════════════════════════════ */
-.tea-compare-section {
-  background: var(--cream-2);
+.heritage-story-section {
+  background: linear-gradient(180deg, #fbf7ee 0%, #f4eee1 100%);
+  border-radius: 28px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 4.5rem 5vw;
 }
 
-.compare-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.2rem;
-  max-width: 1100px;
-  margin: 0 auto;
+.heritage-press-quote {
+  background: #ffffff;
+  border-left: 5px solid var(--gold);
+  border-radius: 18px;
+  padding: 2.2rem 2.6rem;
+  margin: 2.5rem 0 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-.compare-card {
-  background: #fff;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 2px solid transparent;
-}
-
-.compare-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-card-hover);
-  border-color: var(--gold);
-}
-
-.compare-card-head {
-  padding: 1.5rem 1.8rem 1rem;
-}
-
-.compare-tag {
-  display: inline-block;
-  color: #fff;
-  font-size: 0.8rem;
+.press-quote-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
-  margin-bottom: 0.6rem;
+  color: #92400e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  background: #fef3c7;
+  padding: 0.35rem 0.85rem;
+  border-radius: 99px;
 }
 
-.compare-card-head h3 {
-  font-size: 1.35rem;
-  color: var(--green-800);
+.heritage-press-quote blockquote {
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--green-950);
+  margin-bottom: 1.2rem;
+  font-weight: 500;
 }
 
-.compare-img-box {
-  height: 240px;
-  overflow: hidden;
+.press-quote-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px dashed var(--cream-2);
+  padding-top: 1rem;
 }
 
-.compare-img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s;
+.press-link-chip {
+  display: inline-flex;
+  align-items: center;
+  background: var(--green-800);
+  color: #fff;
+  padding: 0.45rem 1.1rem;
+  border-radius: 99px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-.compare-card:hover .compare-img-box img {
-  transform: scale(1.05);
+.press-link-chip:hover {
+  background: var(--green-900);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 70, 32, 0.25);
 }
 
-.compare-details {
-  padding: 1.5rem 1.8rem;
+.heritage-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pillar-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.2rem 1.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.pillar-num {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #d1fae5;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.pillar-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.25rem;
+  color: var(--green-950);
+  margin-bottom: 0.8rem;
+  line-height: 1.35;
+}
+
+.pillar-card p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
   flex-grow: 1;
 }
 
-.compare-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+.pillar-link {
   font-size: 0.88rem;
-  border-bottom: 1px dashed var(--cream-2);
-  padding-bottom: 0.5rem;
-}
-
-.c-label {
   font-weight: 700;
   color: var(--green-800);
-  font-size: 0.82rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: auto;
+  transition: transform 0.2s;
+}
+
+.pillar-link:hover {
+  transform: translateX(4px);
+  color: var(--green-900);
+}
+
+.pillar-badge-bot {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.pillar-badge-bot span {
+  font-size: 0.75rem;
+  background: #f0fdf4;
+  color: var(--green-900);
+  border: 1px solid #bbf7d0;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.heritage-press-bar {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.6rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--cream-2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.press-bar-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--green-950);
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.c-val {
+.press-pills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.press-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.65rem 1.2rem;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--ink);
-  line-height: 1.5;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-.c-val.highlight {
-  font-weight: 700;
-  color: var(--gold-dark);
+.press-pill:hover {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: var(--green-900);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.btn-compare-action {
-  margin: 1.2rem 1.8rem 1.8rem;
-  background: var(--green-800);
-  color: var(--cream);
-  font-size: 0.95rem;
-  font-weight: 700;
+.p-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
 }
 
-.btn-compare-action:hover {
-  background: var(--green-900);
+@media (max-width: 900px) {
+  .heritage-pillars-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ══════════════════════════════════════════════
